@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title>Welcome to super Admin dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src = "jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src = "js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="chat.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+        <body>
+    <nav class="nav1">
+    <ul class="sidenav">
+        <li><h4>Super Admin</h4></li>
+        <li class="edit1">
+            <img src="Images/p2.jpg" class="dp" width="90" height="90">
+            <p class="name">Emmanuel Amadi</p>
+            <p class="mail"> abc@gmail.com</p>
+        </li>
+
+        <li class="edit2">
+          <!--password-->
+            <p class="first"><a href="panelChangepassword.html">
+              <span class="glyphicon glyphicon-lock"></span><br><span style="opacity: 0.5;">password</span></a></p>
+              <!--profile-->
+            <p class="second"><a href="panelProfile.html">
+              <span class="glyphicon glyphicon-user prof"></span><br><span style="opacity: 0.5;">Profile</span></a></p>
+              <!--logout-->
+            <p class="third"><a href="adminlog.html"><span class="glyphicon glyphicon-log-out"></span><br><span style="opacity: 0.5;">Logout</span></a></p>
+        </li>
+
+        <!--home-->
+        <li class="edit3">
+          <p><a href="dashboard.html"><span class="glyphicon glyphicon-home"></span>
+            <span class="hometext">Dashboard</span></a></p>  
+        </li>
+
+        <li class="edit4">
+          <!--this is the students' accordion-->
+                <div class="panel-group" id="myaccordion">
+                    <div class="panel panel-primary" style="border: 0;">
+                        <div class="panel-heading" style="background-color: #45403a; border: 0px;">
+                            <h4 class="panel-title">
+                                <a href="#udemy765" data-parent="#myaccordion" data-toggle="collapse">
+                                    <p style="margin: 0; padding: 0;">
+                                      <span class="glyphicon glyphicon-user student" style="margin-right: 2.5%;"></span>
+                                        <span class="acc">
+                                          Faculty</span><span class="glyphicon glyphicon-menu-down" id="me" onclick="menus()"></span> 
+                                          <span class="glyphicon glyphicon-menu-up" style="display: none;" id="me2" onclick="menuss()"></span>
+                                      </p>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="udemy765" class="panel-collapse collapse">
+                            <div class="panel-body" style="border: 0px;">
+                                <ul class="inner_ul">
+                                    <li class="inner_li"><a href="faculty1.html">
+                                      <span class="glyphicon glyphicon-user sub1"></span>
+                                      <span style="font-size: 12px; font-style: italic;">SMAT</span></a></li>
+                                    <li class="inner_li"><a href="faculty2.html">
+                                      <span class="glyphicon glyphicon-user sub2"></span>
+                                      <span style="font-size: 12px; font-style: italic;">SEET</span></a></li>
+                                    <li class="inner_li"><a href="faculty3.html">
+                                      <span class="glyphicon glyphicon-user sub3">
+                                      </span><span style="font-size: 12px; font-style: italic;">SAAT</span></a></li>
+                                    <li class="inner_li"><a href="faculty4.html">
+                                      <span class="glyphicon glyphicon-user sub4">
+                                    </span><span style="font-size: 12px; font-style: italic;">SOPS</span></a></li>
+                                    <li class="inner_li"><a href="faculty5.html">
+                                      <span class="glyphicon glyphicon-user sub5"></span>
+                                      <span style="font-size: 12px; font-style: italic;">SOES</span></a></li>
+                                      <li class="inner_li" style="padding-bottom: 0%;"><a href="faculty6.html">
+                                        <span class="glyphicon glyphicon-user sub6"></span>
+                                        <span style="font-size: 12px; font-style: italic;">SOHT</span></a></li>
+                                                          </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+          </li>
+         
+          <!--message-->
+          <li class="edit7">
+            <p><a href="chat.html"><span class="glyphicon glyphicon-envelope" style="color:#1dc81d;"></span>
+                <span class="hometext" style="color:#1dc81d;">Message</span></a></p>  
+          </li>
+    </ul>
+    </nav>
+
+<!--main page-->
+            <div class="firstpage">
+
+              <!--header-->
+              <ul class="top_nav1">
+                <li class="note1">Message</li>
+                <li class="note2"><a href="#"><span class="glyphicon glyphicon-bell">
+                  <span style="color:#ff0505; font-size: 21px; margin-left: -28px;"><sup><sup>1</sup></sup></span>
+                  </span></a>
+                </li>
+              </ul> 
+              <!--body--> 
+           
+              <div class="container">
+                <div class="row">
+                    <!--users and search-->
+                    <div class="col-md-5">
+                      <ul class="users">
+                        <li>
+                            <input type="search" class="Search"><i class="glyphicon glyphicon-search searchIcon"></i>
+                        </li>
+                        <li>
+                            <img src="Images/p2.jpg" class="dp" width="70" height="70">
+                            <span class="names">Amadi Emmanuel</span><br> <span>Information Technology</span>
+                        </li>
+
+                        <li>
+                            <img src="Images/p2.jpg" class="dp" width="70" height="70">
+                            <span class="names">Anthony Otuonye</span><br> <span>Civil Engineering</span>
+                        </li>
+
+                        <li>
+                            <img src="Images/p2.jpg" class="dp" width="70" height="70">
+                            <span class="names">Obi Nwaokonkwo</span><br> <span>Financial Management Technology</span>
+                        </li>
+
+                        <li>
+                            <img src="Images/p2.jpg" class="dp" width="70" height="70">
+                            <span class="names">Nwakamma Cosmos</span><br> <span>Electrical Electronics Engineering</span>
+                        </li>
+
+                        <li>
+                            <img src="Images/p2.jpg" class="dp" width="70" height="70">
+                            <span class="names">Ikenna Ajare</span><br> <span>Mechatronics</span>
+                        </li>
+
+                        <li>
+                            <img src="Images/p2.jpg" class="dp" width="70" height="70">
+                            <span class="names">Ikerionwu Charles</span><br> <span>Biochemistry</span>
+                        </li>
+
+                        <li>
+                            <img src="Images/p2.jpg" class="dp" width="70" height="70">
+                            <span class="names">Baldwin Asiegbu</span><br> <span>Physics</span>
+                        </li>
+                      </ul>     
+                    </div>
+        
+        
+        
+        <!--chats-->
+                    <div class="col-md-7" style="border-left: 1px solid #e6e6e6;">
+                      <ul>
+                        <li>
+                          <img src="Images/p2.jpg" class="dp" width="70" height="70">
+                          <span>Anthony Otuonye</span><br> <span>Civil Engineering</span>
+                      </li>
+                      </ul>
+                     <div class="row">
+                       <div class="col-md-12">
+                         <br>
+                          <p>I was told IFT now offer new courses, some of which
+                            were not listed on your student page. Could you send the
+                           new courses here so it can be added to our database.
+                           thanks.
+                        </p>
+
+                        <p>okay</p>
+  
+                        <p>I was told IFT now offer new courses, some of which
+                            were not listed on your student page. Could you send the
+                           new courses here so it can be added to our database.
+                           thanks.
+                        </p>
+                       </div> 
+                     </div>
+                      <br>
+
+                     <form name="chatform" method="GET" action="">
+                        <input type="text" name="chatinput" id="chatinput" placeholder="Aa" row="5" col="5" maxlength="2000">
+                       <span class="glyphicon glyphicon-chevron-right"></span>
+                   </form>
+                    </div>
+
+                </div>
+                
+              </div>
+       
+
+
+                <script src= "jquery-3.4.1.min.js"></script>
+                <script src= "jqueryui/jquery-ui.js"></script>
+                <script src="adminpanel.js"></script>
+                <script>
+               $('.glyphicon-search').on('click',function(){
+             var inputVal = $('.Search').val();
+            var lists = $('.names').html();
+            $('.users li').filter(function(){
+             $('.names').text().indexOf(inputVal)
+            }).prependTo('.users');
+               });
+                </script>
+               
+        </body>
+       
+</html>
+
+user.parent().siblings().hide();

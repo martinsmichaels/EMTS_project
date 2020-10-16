@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title>Welcome to super Admin dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src = "jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src = "js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="faculty.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+        <body>
+    <nav class="nav1">
+    <ul class="sidenav">
+        <li><h4>Super Admin</h4></li>
+        <li class="edit1">
+            <img src="Images/p2.jpg" class="dp" width="90" height="90">
+            <p class="name">Emmanuel Amadi</p>
+            <p class="mail"> abc@gmail.com</p>
+        </li>
+
+        <li class="edit2">
+          <!--password-->
+            <p class="first"><a href="panelChangepassword.html">
+              <span class="glyphicon glyphicon-lock"></span><br><span style="opacity: 0.5;">password</span></a></p>
+              <!--profile-->
+            <p class="second"><a href="panelProfile.html">
+              <span class="glyphicon glyphicon-user prof"></span><br><span style="opacity: 0.5;">Profile</span></a></p>
+              <!--logout-->
+            <p class="third"><a href="adminlog.html"><span class="glyphicon glyphicon-log-out"></span><br><span style="opacity: 0.5;">Logout</span></a></p>
+        </li>
+
+        <!--home-->
+        <li class="edit3">
+          <p><a href="dashboard.html"><span class="glyphicon glyphicon-home"></span>
+            <span class="hometext">Dashboard</span></a></p>  
+        </li>
+
+        <li class="edit4">
+          <!--this is the students' accordion-->
+                <div class="panel-group" id="myaccordion">
+                    <div class="panel panel-primary" style="border: 0;">
+                        <div class="panel-heading" style="background-color: #45403a; border: 0px;">
+                            <h4 class="panel-title">
+                                <a href="#udemy765" data-parent="#myaccordion" data-toggle="collapse">
+                                    <p style="margin: 0; padding: 0;">
+                                      <span class="glyphicon glyphicon-user student" style="margin-right: 2.5%;"></span>
+                                        <span class="acc">
+                                          Faculty</span><span class="glyphicon glyphicon-menu-down" id="me" onclick="menus()"></span> 
+                                          <span class="glyphicon glyphicon-menu-up" style="display: none;" id="me2" onclick="menuss()"></span>
+                                      </p>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="udemy765" class="panel-collapse collapse">
+                            <div class="panel-body" style="border: 0px;">
+                                <ul class="inner_ul">
+                                    <li class="inner_li"><a href="faculty1.html">
+                                      <span class="glyphicon glyphicon-user sub1"></span>
+                                      <span style="font-size: 12px; font-style: italic;">SMAT</span></a></li>
+                                    <li class="inner_li"><a href="faculty2.html">
+                                      <span class="glyphicon glyphicon-user sub2"></span>
+                                      <span style="font-size: 12px; font-style: italic;">SEET</span></a></li>
+                                    <li class="inner_li"><a href="faculty3.html">
+                                      <span class="glyphicon glyphicon-user sub3" style="color: #1dc81d;">
+                                      </span><span style="font-size: 12px; font-style: italic; color: #1dc81d;">SAAT</span></a></li>
+                                    <li class="inner_li"><a href="faculty4.html">
+                                      <span class="glyphicon glyphicon-user sub4">
+                                    </span><span style="font-size: 12px; font-style: italic;">SOPS</span></a></li>
+                                    <li class="inner_li"><a href="faculty5.html">
+                                      <span class="glyphicon glyphicon-user sub5"></span>
+                                      <span style="font-size: 12px; font-style: italic;">SOES</span></a></li>
+                                      <li class="inner_li" style="padding-bottom: 0%;"><a href="faculty6.html">
+                                        <span class="glyphicon glyphicon-user sub6"></span>
+                                        <span style="font-size: 12px; font-style: italic;">SOHT</span></a></li>
+                                                          </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+          </li>
+         
+          <!--message-->
+          <li class="edit7">
+            <p><a href="chat.html"><span class="glyphicon glyphicon-envelope"></span><span class="hometext">Message</span></a></p>  
+          </li>
+    </ul>
+    </nav>
+
+ <!--main page-->
+<div class="firstpage">
+    <!--header-->
+    <ul class="top_nav1">
+      <li class="note1">SAAT</li>
+      <li class="note2"><a href="#"><span class="glyphicon glyphicon-bell">
+        <span style="color:#ff0505; font-size: 21px; margin-left: -28px;"><sup><sup>1</sup></sup></span>
+        </span></a>
+      </li>
+    </ul> 
+    <!--body--> 
+
+    <div class="container parent ift">
+        <div class="container">
+            <button class="btn btn-lg one"><span>IFT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+            <button class="btn btn-lg two"><span>PMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+            <button class="btn btn-lg three"><span>FMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+            <button class="btn btn-lg four"><span>MMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+            <button class="btn btn-lg five"><span>TMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+           </div>
+
+           <!--year one-->
+    <div class="container">
+      <br>
+      <h3>100 Level</h3>
+      <br>
+    <table class="table table-hover">
+      <tr>
+        <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+      </tr>
+      <tr>
+        <td>smat</td><td>IFT</td><td>100</td><td>PHY 101</td><td>Physics</td><td>4</td><td>230</td>
+        <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+      </tr>
+    </table>
+    <br>
+    </div>
+
+           <!--year two-->
+           <div class="container">
+               <br>
+               <h3>200 Level</h3>
+               <br>
+             <table class="table table-hover">
+               <tr>
+                 <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+               </tr>
+               <tr>
+            <td>smat</td><td>IFT</td><td>200</td><td>IMT 201</td><td>stack overflow</td><td>2</td><td>187</td>
+            <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+               </tr>
+             </table>
+             <br>
+             </div>
+
+             <!--year three-->
+           <div class="container">
+               <br>
+               <h3>300 Level</h3>
+               <br>
+             <table class="table table-hover">
+               <tr>
+                 <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+               </tr>
+               <tr>
+                  <td>smat</td><td>IFT</td><td>300</td><td>IMT 310</td><td>information systems</td><td>3</td><td>157</td>
+                  <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+               </tr>
+             </table>
+             <br>
+             </div>
+           
+             <!--year four-->
+           <div class="container">
+               <br>
+               <h3>400 Level</h3>
+               <br>
+             <table class="table table-hover">
+               <tr>
+                 <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+               </tr>
+               <tr>
+                  <td>smat</td><td>IFT</td><td>400</td><td>IMT 405</td><td>web development</td><td>3</td><td>185</td>
+                  <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+               </tr>
+             </table>
+             <br>
+             </div>
+
+             <!--year five-->
+           <div class="container">
+               <br>
+               <h3>500 Level</h3>
+               <br>
+             <table class="table table-hover">
+               <tr>
+                 <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+               </tr>
+               <tr>
+                  <td>smat</td><td>IFT</td><td>200</td><td>IMT 503</td><td>database systems</td><td>2</td><td>174</td>
+                  <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+               </tr>
+             </table>
+             <br>
+             </div>
+             
+             <!--invigilators and halls-->
+             <div class="container">
+                 <div class="row">
+                     <div class="col-md-5">
+                       <br>
+                       <h4>Invigilators</h4>
+                       <br>
+                       <table class="table table-hover">
+                        <tr>
+                          <td>Dr Anthony Otuonye</td>
+                        </tr>
+                        <tr>
+                           <td>Dr John</td>
+                         </tr>
+                       </table>
+                     </div>
+
+                     <div class="col-md-5">
+                       <br>
+                         <h4>Exam Halls</h4>
+                         <br>
+                         <table class="table table-hover">
+                             <tr>
+                               <td>IMT lecture hall 1</td>
+                               <td>150</td>
+                             </tr>
+                             <tr>
+                                 <td>IMT lecture hall 2</td>
+                                 <td>150</td>
+                               </tr>
+                            </table>
+                     </div>
+                   </div>
+             </div>
+    </div>
+
+
+<!--pmt-->
+<div class="container parent pmt">
+    <div class="container">
+        <button class="btn btn-lg one" style="background-color: white;"><span>IFT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg two" style="background-color: #bfbfbf"><span>PMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg three"><span>FMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg four"><span>MMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg five"><span>TMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+       </div>
+
+
+       <!--year one-->
+       <div class="container">
+         <br>
+         <h3>100 Level</h3>
+         <br>
+       <table class="table table-hover">
+         <tr>
+           <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+         </tr>
+         <tr>
+            <td>smat</td><td>PMT</td><td>100</td><td>PHY 101</td><td>Physics</td><td>4</td><td>187</td>
+            <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+         </tr>
+       </table>
+       <br>
+       </div>
+
+       <!--year two-->
+       <div class="container">
+           <br>
+           <h3>200 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>PMT</td><td>200</td><td>PMT 201</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+
+         <!--year three-->
+       <div class="container">
+           <br>
+           <h3>300 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>PMT</td><td>300</td><td>PMT 305</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+       
+         <!--year four-->
+       <div class="container">
+           <br>
+           <h3>400 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>PMT</td><td>400</td><td>PMT 407</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+
+         <!--year five-->
+       <div class="container">
+           <br>
+           <h3>500 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>PMT</td><td>500</td><td>PMT 501</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+         
+          <!--invigilators and halls-->
+          <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                  <br>
+                  <h4>Invigilators</h4>
+                  <br>
+                  <table class="table table-hover">
+                   <tr>
+                     <td>Dr Anthony Otuonye</td>
+                   </tr>
+                   <tr>
+                      <td>Dr John</td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="col-md-5">
+                  <br>
+                    <h4>Exam Halls</h4>
+                    <br>
+                    <table class="table table-hover">
+                        <tr>
+                          <td>PMT lecture hall 1</td>
+                          <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>PMT lecture hall 2</td>
+                            <td>150</td>
+                          </tr>
+                       </table>
+                </div>
+              </div>
+        </div>
+</div>
+
+<!--fmt-->
+<div class="container parent fmt">
+    <div class="container">
+        <button class="btn btn-lg one" style="background-color: white;"><span>IFT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg two"><span>PMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg three" style="background-color: #bfbfbf;"><span>FMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg four"><span>MMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg five"><span>TMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+       </div>
+
+       <!--year one-->
+       <div class="container">
+         <br>
+         <h3>100 Level</h3>
+         <br>
+       <table class="table table-hover">
+         <tr>
+           <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+         </tr>
+         <tr>
+            <td>smat</td><td>FMT</td><td>100</td><td>Phy 101</td><td>Physics</td><td>2</td><td>187</td>
+            <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+         </tr>
+       </table>
+       <br>
+       </div>
+
+       <!--year two-->
+       <div class="container">
+           <br>
+           <h3>200 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>FMT</td><td>200</td><td>FMT 201</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+
+         <!--year three-->
+       <div class="container">
+           <br>
+           <h3>300 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>FMT</td><td>300</td><td>FMT 301</td><td>stack overflow</td><td>2</td><td>187</td><td><span class="glyphicon glyphicon-pencil"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+       
+         <!--year four-->
+       <div class="container">
+           <br>
+           <h3>400 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>FMT</td><td>400</td><td>FMT 401</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+
+         <!--year five-->
+       <div class="container">
+           <br>
+           <h3>500 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>FMT</td><td>500</td><td>FMT 501</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+         
+         <!--invigilators and halls-->
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-5">
+                   <br>
+                   <h4>Invigilators</h4>
+                   <br>
+                   <table class="table table-hover">
+                    <tr>
+                      <td>Dr Anthony Otuonye</td>
+                    </tr>
+                    <tr>
+                       <td>Dr John</td>
+                     </tr>
+                   </table>
+                 </div>
+
+                 <div class="col-md-5">
+                   <br>
+                     <h4>Exam Halls</h4>
+                     <br>
+                     <table class="table table-hover">
+                         <tr>
+                           <td>FMT lecture hall 1</td>
+                           <td>150</td>
+                         </tr>
+                         <tr>
+                             <td>FMT lecture hall 2</td>
+                             <td>150</td>
+                           </tr>
+                        </table>
+                 </div>
+               </div>
+        </div>
+        </div>
+
+<!--mmt-->
+<div class="container parent mmt">
+    <div class="container">
+        <button class="btn btn-lg one" style="background-color: white;"><span>IFT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg two"><span>PMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg three"><span>FMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg four" style="background-color: #bfbfbf;"><span>MMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg five"><span>TMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+       </div>
+       <!--year one-->
+       <div class="container">
+         <br>
+         <h3>100 Level</h3>
+         <br>
+       <table class="table table-hover">
+         <tr>
+           <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+         </tr>
+         <tr>
+            <td>smat</td><td>MMT</td><td>100</td><td>Phy 101</td><td>Physics</td><td>2</td><td>187</td>
+            <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+         </tr>
+       </table>
+       <br>
+       </div>
+
+       <!--year two-->
+       <div class="container">
+           <br>
+           <h3>200 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>MMT</td><td>200</td><td>MMT 201</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+
+         <!--year three-->
+       <div class="container">
+           <br>
+           <h3>300 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>MMT</td><td>300</td><td>MMT 301</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+       
+         <!--year four-->
+       <div class="container">
+           <br>
+           <h3>400 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>MMT</td><td>400</td><td>MMT 401</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+
+         <!--year five-->
+       <div class="container">
+           <br>
+           <h3>500 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>MMT</td><td>500</td><td>MMT 501</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+         
+         <!--invigilators and halls-->
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-5">
+                   <br>
+                   <h4>Invigilators</h4>
+                   <br>
+                   <table class="table table-hover">
+                    <tr>
+                      <td>Dr Anthony Otuonye</td>
+                    </tr>
+                    <tr>
+                       <td>Dr John</td>
+                     </tr>
+                   </table>
+                 </div>
+
+                 <div class="col-md-5">
+                   <br>
+                     <h4>Exam Halls</h4>
+                     <br>
+                     <table class="table table-hover">
+                         <tr>
+                           <td>MMT lecture hall 1</td>
+                           <td>150</td>
+                         </tr>
+                         <tr>
+                             <td>MMT lecture hall 2</td>
+                             <td>150</td>
+                           </tr>
+                        </table>
+                 </div>
+               </div>
+           </div>
+           </div>
+
+<!--tmt-->
+<div class="container parent tmt">
+    <div class="container">
+        <button class="btn btn-lg one" style="background-color: white;"><span>IFT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg two"><span>PMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg three"><span>FMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg four"><span>MMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-lg five" style="background-color: #bfbfbf;"><span>TMT</span><span class="glyphicon glyphicon-arrow-right"></span></button>
+       </div>
+
+       <!--year one-->
+       <div class="container">
+         <br>
+         <h3>100 Level</h3>
+         <br>
+       <table class="table table-hover">
+         <tr>
+           <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+         </tr>
+         <tr>
+            <td>smat</td><td>TMT</td><td>100</td><td>Phy 101</td><td>Physics</td><td>2</td><td>187</td>
+            <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+         </tr>
+       </table>
+       <br>
+       </div>
+
+       <!--year two-->
+       <div class="container">
+           <br>
+           <h3>200 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>TMT</td><td>200</td><td>TMT 201</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+
+         <!--year three-->
+       <div class="container">
+           <br>
+           <h3>300 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>TMT</td><td>300</td><td>TMT 301</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+       
+         <!--year four-->
+       <div class="container">
+           <br>
+           <h3>400 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>TMT</td><td>400</td><td>TMT 401</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+
+         <!--year five-->
+       <div class="container">
+           <br>
+           <h3>500 Level</h3>
+           <br>
+         <table class="table table-hover">
+           <tr>
+             <th>School</th><th>Dept.</th><th>Level</th><th>Course Code</th><th>Course Title</th><th>Unit</th><th>No of Students</th><th>Action</th>
+           </tr>
+           <tr>
+              <td>smat</td><td>TMT</td><td>500</td><td>TMT 501</td><td>stack overflow</td><td>2</td><td>187</td>
+              <td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash" style="margin-left: 10%;"></span></td>
+           </tr>
+         </table>
+         <br>
+         </div>
+         
+         <!--invigilators and halls-->
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-5">
+                   <br>
+                   <h4>Invigilators</h4>
+                   <br>
+                   <table class="table table-hover">
+                    <tr>
+                      <td>Dr Anthony Otuonye</td>
+                    </tr>
+                    <tr>
+                       <td>Dr John</td>
+                     </tr>
+                   </table>
+                 </div>
+
+                 <div class="col-md-5">
+                   <br>
+                     <h4>Exam Halls</h4>
+                     <br>
+                     <table class="table table-hover">
+                         <tr>
+                           <td>TMT lecture hall 1</td>
+                           <td>150</td>
+                         </tr>
+                         <tr>
+                             <td>TMT lecture hall 2</td>
+                             <td>150</td>
+                           </tr>
+                        </table>
+                 </div>
+               </div>
+             </div>
+             </div>
+            
+    </div>
+
+
+                <script src= "jquery-3.4.1.min.js"></script>
+                <script src= "jqueryui/jquery-ui.js"></script>
+                <script src="adminpanel.js"></script>
+                <script src="faculty.js"></script>   
+        </body>
+       
+</html>

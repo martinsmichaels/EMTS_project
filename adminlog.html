@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Admin Login page</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script type="text/javascript" src = "jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src = "js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="adminlog.css">
+        <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+        
+    </head>
+
+   
+    <body>
+            <ul>
+                    <li class="futo-logo"><img src="Images/logo2.jpeg" width="60" height= "60"></li>
+                <li class="fed">Federal University of Technology,<br> Owerri</li>
+            <li><a href ="adminlog.html">Login</a></li>
+            <li><a href ="rules.html">Exam Rules and Regulation</a></li>
+            <li><a href ="calendar.html">Semester Calendar</a></li>
+            <li><a href ="halls.html">Exam Halls</a></li>
+            <li><a href ="index.html">Home</a></li>
+            </ul>
+          <div class="cover">
+              <div class="imgcover">
+                  <img src="Images/ii.jpg" style="width: 100%;">
+              </div>
+        <div class="Formcover">
+                <span class="glyphicon glyphicon-user admin"></span> <h4> Log in</h4>
+                <form name="myFormz" action="panelHome.html" class="hng" method="POST">
+
+                    <label for="email">Email</label>
+    <div class="inputWithIcon" style="margin-bottom: 1%;">
+        <input type="email" placeholder="@gmail.com" name="email" id="email" 
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="all letter in email must be in lowercase" required>
+        <i class="glyphicon glyphicon-user" style="top:15px;"></i>
+    </div>
+    <p id="ist" style="margin-bottom: 8%;"></p>
+
+    <label for="password" id="password-label">Password</label>
+    <div class="inputWithIcon">
+            <input type="password" placeholder="password" id="password" name="password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must be at least 8 characters and contain at least one number,
+                 one uppercase and one lowercase letter" required>
+            <i class="glyphicon glyphicon-lock" style="top: 15px;"></i>
+        </div>
+        <p id="secs"></p>
+        <span class="fp"><a href="#"> Forgot password?</a></span>
+        <span class="check">Remember me <input type="checkbox" name="check"
+            value="checkbox"> </span>
+           
+        <input type="submit" name="submit" value="Login" class="submit">
+       
+        </form>
+   </div>
+</div>
+   <footer>
+        <p>Copyright <span id="xam">2020</span> <b>-</b>
+             Federal University of Technology Owerri 
+             <span class="glyphicon glyphicon-hand-right"></span>
+              <span class="glyphicon glyphicon-hand-left"></span></p>
+           </footer>
+          
+    <!--mobile view-->
+   
+        <div class="overlay">
+            <span class="glyphicon glyphicon-user admin_mobile"></span> <h4> Admin Login</h4>
+            <form name="myFormz" action="panelHome.html" class="hng" method="POST">
+                <div class="inputWithIcon">
+                    <input type="email" placeholder="@gmail.com" name="email" id="emails"
+                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="all letter in email must be in lowercase" required>
+                    <i class="glyphicon glyphicon-user" style="top:15px;"></i>
+                </div>
+                <p id="txt"></p>
+                <div class="inputWithIcon">
+                        <input type="password" placeholder="password" name="password" id="passwords" 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must be at least 8 characters and contain at least one number,
+                         one uppercase and one lowercase letter" required>
+                        <i class="glyphicon glyphicon-lock" style="top: 15px;"></i>
+                    </div>
+                    <p id="txts"></p>
+                    <input type="submit" name="submit" value="submit" class="submit">
+                    <span class="fp"><a href="#"> Forgot password?</a></span>
+                    <span class="check">Remember me <input type="checkbox" name="check"
+                        value="checkbox"> </span>
+                    </form>
+                    <a href="index.html" class="btn btn-lg return">Return to Home</a>
+                   
+        </div> 
+
+        <script src= "jquery-3.4.1.min.js"></script>
+<script src= "jqueryui/jquery-ui.js"></script>
+<script>
+    // footer update 
+    function calendarYear(){
+    var p;
+    var w = new Date().getFullYear();
+    p = document.getElementById("xam").innerHTML = w;
+}
+window.onload = calendarYear;
+</script>
+
+</body>
+</html>

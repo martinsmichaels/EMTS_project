@@ -1,0 +1,330 @@
+body{
+    margin: 0; background-color: #e6e6e6;
+    overflow: hidden; padding-bottom: 0%;
+}
+
+.nav1{
+    background-color: #45403a; height: 100%;
+}
+.firstpage{
+    margin-left: 20%;
+}
+.sidenav{
+    list-style-type: none;
+margin: 0; padding: 0; width: 20%;
+position: fixed; height: 100%;
+overflow: auto;  background-color: #45403a;
+}
+
+li a{
+    display: block;
+    text-decoration: none; color: white;
+}
+
+li a:active, li a:focus, li a:hover{
+    background-color: #45403a; color: #1dc81d;
+    text-decoration: none;
+}
+
+li h4{
+    color: white; font-size: 24px; text-align: center;
+    padding-top: 12px; padding-bottom: 12px;
+}
+.dp{
+    margin-left: 33.5%;
+     border-radius: 50%; margin-bottom: 1%;
+     margin-top: 3%;
+}
+.name{
+    text-align: center; color: white;
+    font-size: 18px;
+}
+.mail{
+    text-align: center; color: white;
+    font-size: 16px; opacity: 0.5; margin-top: -2%;
+}
+
+.edit2{
+    display: flex; flex-direction: row;
+    color: white; padding-top: 12%; 
+    font-family: 'Times New Roman', Times, serif;
+    border: 0; border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 3%;
+}
+.edit1{
+    border-top: 1px solid #e6e6e6;
+}
+.first{
+ margin-left: 10%;
+}
+.third{
+    margin-left: 11%;
+    padding: 0 10px;
+}
+.second{
+     margin-left: 10%;
+    padding: 0 10px;
+}
+.glyphicon-lock{
+    font-size: 22px; margin-left: 30%;
+}
+.prof{
+    font-size: 14px; border-radius: 50%;
+    border: 3px solid white; padding: 7%;
+    margin-left: 11%; margin-bottom: 6%;
+}
+.prof:hover, .prof:focus, .prof:active{
+    border: 3px solid #1dc81d; text-decoration: none;
+}
+
+.glyphicon-log-out{
+    font-size: 22px; margin-left: 20%;
+}
+
+.edit3{
+    padding-top: 25%; padding-bottom: 0%;
+}
+.edit3 p, .edit7 p{
+    margin-left: 13%; color: white;
+}
+.glyphicon-home, .glyphicon-envelope{
+    font-size: 20px;
+}
+.hometext{
+font-style: italic; margin-left: 7%;
+}
+
+ .edit7{
+    padding-top: 6%;
+}
+
+.student{
+    font-size: 17px; border: 2px solid white;
+    margin-left:8%; float: left;
+}
+.student:hover, .student:focus, .student:active{
+    border: 2px solid #1dc81d; color: #1dc81d;
+     background-color: #45403a; text-decoration: none;
+}
+
+.glyphicon-menu-down, .glyphicon-menu-up{
+    margin-left: 10%; float: left; padding-top: 2%; font-size: 14px;
+}
+.glyphicon-menu-down:hover, .glyphicon-menu-down:active, .glyphicon-menu-down:focus,
+.glyphicon-menu-up:hover, .glyphicon-menu-up:active, .glyphicon-menu-up:focus{
+    color: #1dc81d; background-color: #45403a; text-decoration: none;
+}
+.edit4 p{
+    margin-left: 5%; color: white;
+}
+.edit4{
+     margin: 0; padding-bottom: 3%;
+     padding-left: 0; padding-top: -3%; padding-right: 0;
+}
+.edit4 p:hover, .edit4 p:focus, .edit4 p:active{
+    color: #1dc81d; text-decoration: none;
+}
+
+
+.panel-group{
+    width: 100%; margin: 0; padding: 0;
+}
+.acc{
+    font-style:italic; float: left; margin-left: 6%;
+     padding-top: 3%; font-size: 14px;
+}
+.acc:hover, .acc:focus, .acc:active{
+    color: #1dc81d; background-color: #45403a; text-decoration: none;
+}
+.panel-body{
+    background-color: #45403a;
+}
+.inner_ul{
+    list-style-type: none; border: 0; background-color: #45403a;
+    padding: 0; margin: 0; padding-left: 30%; overflow: hidden;
+}
+.inner_li a:active, .inner_li a:focus, .inner_li a:hover{
+    color: #1dc81d; background-color: #45403a; text-decoration: none;
+}
+.inner_li{
+    padding-bottom: 5%; 
+}
+.sub5:active, .sub5:hover, .sub5:focus, .sub4:active, .sub4:hover, .sub4:focus,
+ .sub3:active, .sub3:hover, .sub3:focus, .sub2:active, .sub2:hover, .sub2:focus,
+  .sub1:active, .sub1:hover, .sub1:focus, .sub6:active, .sub6:hover, .sub6:focus{
+    color: #1dc81d; background-color: #45403a; text-decoration: none;
+}
+.sub5{
+    color:#eb04ff; margin-right: 10%;
+}
+.sub4{
+    color: #ffe604; margin-right: 12%;
+}
+.sub3{
+    color: #ff6e04; margin-right: 12%;
+}
+.sub2{
+    color: #0c69d6; margin-right: 10%;
+}
+.sub1{
+    color: #ff0505; margin-right: 10%;
+}
+.sub6{
+    color: #66ffff; margin-right: 10%;
+}
+
+
+.page1{
+    margin-left: 20%;
+     padding:0;
+     height: 100%;
+}
+
+.top_nav1{
+    list-style-type: none; margin: 0;
+     padding-right: 4%; padding-left: 3%; border-bottom: 2.5px solid #e6e6e6;
+     padding-bottom: 20px; padding-top: 20px;
+     width: 100%;  overflow: hidden; background-color: white;
+}
+
+.note1{
+    float: left; display: inline; font-size: 20px;
+     color: #cccccc;
+}
+.note2{
+    float: right; display: inline; font-size: 20px;
+}
+.glyphicon-bell{
+    color: #cccccc; margin-right: -10%; font-size: 23px;
+}
+.note2 a:hover, .note2 a:active, .note2 a:focus{
+    background-color: #f2f2f2; border: 0px;
+     color: #cccccc; text-decoration: none;
+}
+/*end of menu and heading*/
+
+.ift{
+    overflow-y: scroll; height: 630px;
+     margin: 0; width: 100%; display: block;
+}
+.pmt, .fmt, .mmt, .tmt{
+    overflow-y: scroll; height: 630px;
+     margin: 0; width: 100%; display: none;
+}
+
+.parent .container:nth-of-type(1){
+    background-color: white; margin-top: 3%;
+    width: 98%; padding-bottom: 3%; padding-top: 3%;
+}
+
+.parent .container:nth-of-type(1) .btn-lg:nth-of-type(1){
+    width: 20%; margin-left: 2%; margin-right: 5%;
+    padding-bottom: 3%; padding-top: 3%; background-color: #bfbfbf;
+    border-radius: 0px; box-shadow: 3px 3px 3px 3px #d9d9d9;
+}
+.parent .container:nth-of-type(1) .btn-lg:nth-of-type(2){
+    width: 20%; margin-right: 5%; padding-bottom: 3%; padding-top: 3%;
+    border-radius: 0px; box-shadow: 3px 3px 3px 3px #d9d9d9;
+    background-color: white;
+}
+
+.parent .container:nth-of-type(1) .btn-lg:nth-of-type(3){
+    width: 20%; margin-right: 5%; padding-bottom: 3%; padding-top: 3%;
+    border-radius: 0px; box-shadow: 3px 3px 3px 3px #d9d9d9;
+    background-color: white;
+}
+.parent .container:nth-of-type(1) .btn-lg:nth-of-type(4){
+    width: 20%; padding-bottom: 3%; padding-top: 3%;
+    border-radius: 0px; box-shadow: 3px 3px 3px 3px #d9d9d9;
+    background-color: white;
+}
+.parent .container:nth-of-type(1) .btn-lg:nth-of-type(5){
+    width: 20%; margin-left: 2%; padding-bottom: 3%; padding-top: 3%;
+    border-radius: 0px; box-shadow: 3px 3px 3px 3px #d9d9d9;
+    background-color: white; margin-top: 3%;
+}
+
+.parent .container:nth-of-type(1) .btn-lg:nth-of-type(1):focus,
+.parent .container:nth-of-type(1) .btn-lg:nth-of-type(2):focus,
+.parent .container:nth-of-type(1) .btn-lg:nth-of-type(3):focus,
+.parent .container:nth-of-type(1) .btn-lg:nth-of-type(4):focus,
+.parent .container:nth-of-type(1) .btn-lg:nth-of-type(5):focus
+{
+    outline: none;
+}
+
+.parent .container:nth-of-type(1) button span:first-of-type{
+    float: left; margin-left: 22%; font-weight: bold;
+    font-size: 24px;
+}
+.parent .container:nth-of-type(1) button span:last-of-type{
+    float: right; margin-right: 22%; margin-top: 4%;
+}
+
+/*courses container*/
+.parent .container:nth-of-type(2), .parent .container:nth-of-type(3),
+.parent .container:nth-of-type(4), .parent .container:nth-of-type(5),
+.parent .container:nth-of-type(6){
+    background-color: white; margin-top: 3%;
+    width: 98%; border-radius: 7px;
+}
+
+.parent .container:nth-of-type(2) h3, .parent .container:nth-of-type(3) h3,
+.parent .container:nth-of-type(4) h3, .parent .container:nth-of-type(5) h3,
+.parent .container:nth-of-type(6) h3{
+    font-weight: bold; margin-left: .9%;
+}
+
+/*invigilators and hals*/
+.parent .container:nth-of-type(7){
+ margin-top: 3%; margin-bottom: 3%;
+    width: 98%; 
+}
+.col-md-5:first-of-type{
+   background-color: white; width: 49%;
+   border-radius: 7px;
+}
+.col-md-5:last-of-type{
+    background-color: white; 
+    margin-left: 2%; width: 49%;
+    border-radius: 7px;
+}
+
+.parent .container:nth-of-type(7) h4{
+    font-weight: bold; margin-left: 2%;
+}
+
+
+
+.inputclass{
+    width:100%; padding-left:20%; border:0px;
+  }
+.inputclass:focus, .inputclass:focus{
+  outline: none;
+} 
+@media screen and (max-width: 1024px){
+    .parent{
+        overflow-y: scroll; height: 1700px;
+        margin: 0; width: 100%; padding-bottom: 0%;
+    }
+
+    body{
+        margin: 0; padding-bottom: 0%;
+    }
+    .col-md-5:last-of-type{
+        background-color: white; 
+        margin-left: 0%; width: 49%;
+        border-radius: 7px;
+    }
+        .sidenav{
+            list-style-type: none;
+        margin: 0; padding: 0; width: 25%;
+        position: fixed; height: 100%;
+        overflow: auto;  background-color: #45403a;
+        }
+        
+    .firstpage{
+            margin-left: 25%;
+        }
+     
+}

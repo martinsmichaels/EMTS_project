@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title>Welcome to super Admin dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src = "jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src = "js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="superAdmin.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+        <body>
+    <nav class="nav1">
+    <ul class="sidenav">
+        <li><h4>Super Admin</h4></li>
+        <li class="edit1">
+            <img src="Images/p2.jpg" class="dp" width="90" height="90">
+            <p class="name">Emmanuel Amadi</p>
+            <p class="mail"> abc@gmail.com</p>
+        </li>
+
+        <li class="edit2">
+          <!--password-->
+            <p class="first"><a href="panelChangepassword.html">
+              <span class="glyphicon glyphicon-lock"></span><br><span style="opacity: 0.5;">password</span></a></p>
+              <!--profile-->
+            <p class="second"><a href="panelProfile.html">
+              <span class="glyphicon glyphicon-user prof"></span><br><span style="opacity: 0.5;">Profile</span></a></p>
+              <!--logout-->
+            <p class="third"><a href="adminlog.html"><span class="glyphicon glyphicon-log-out"></span><br><span style="opacity: 0.5;">Logout</span></a></p>
+        </li>
+
+        <!--home-->
+        <li class="edit3">
+          <p><a href="#"><span class="glyphicon glyphicon-home" style="color: #1dc81d;"></span>
+            <span class="hometext" style="color:#1dc81d;">Dashboard</span></a></p>  
+        </li>
+
+        <li class="edit4">
+          <!--this is the students' accordion-->
+                <div class="panel-group" id="myaccordion">
+                    <div class="panel panel-primary" style="border: 0;">
+                        <div class="panel-heading" style="background-color: #45403a; border: 0px;">
+                            <h4 class="panel-title">
+                                <a href="#udemy765" data-parent="#myaccordion" data-toggle="collapse">
+                                    <p style="margin: 0; padding: 0;">
+                                      <span class="glyphicon glyphicon-user student" style="margin-right: 2.5%;"></span>
+                                        <span class="acc"style="">
+                                          Faculty</span><span class="glyphicon glyphicon-menu-down" id="me" onclick="menus()"></span> 
+                                          <span class="glyphicon glyphicon-menu-up" style="display: none;" id="me2" onclick="menuss()"></span>
+                                      </p>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="udemy765" class="panel-collapse collapse">
+                            <div class="panel-body" style="border: 0px;">
+              <ul class="inner_ul">
+            <li class="inner_li"><a href="faculty1.html">
+              <span class="glyphicon glyphicon-user sub1"></span>
+              <span style="font-size: 12px; font-style: italic;">SMAT</span></a></li>
+            <li class="inner_li"><a href="faculty2.html">
+              <span class="glyphicon glyphicon-user sub2"></span>
+              <span style="font-size: 12px; font-style: italic;">SEET</span></a></li>
+            <li class="inner_li"><a href="faculty3.html">
+              <span class="glyphicon glyphicon-user sub3">
+              </span><span style="font-size: 12px; font-style: italic;">SAAT</span></a></li>
+            <li class="inner_li"><a href="faculty4.html">
+              <span class="glyphicon glyphicon-user sub4">
+            </span><span style="font-size: 12px; font-style: italic;">SOPS</span></a></li>
+            <li class="inner_li"><a href="faculty5.html">
+              <span class="glyphicon glyphicon-user sub5"></span>
+              <span style="font-size: 12px; font-style: italic;">SOES</span></a></li>
+              <li class="inner_li" style="padding-bottom: 0%;"><a href="faculty6.html">
+                <span class="glyphicon glyphicon-user sub6"></span>
+                <span style="font-size: 12px; font-style: italic;">SOHT</span></a></li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+          </li>
+         
+          <!--message-->
+          <li class="edit7">
+            <p><a href="chat.html"><span class="glyphicon glyphicon-envelope"></span><span class="hometext">Message</span></a></p>  
+          </li>
+    </ul>
+    </nav>
+
+<!--main page-->
+            <div class="firstpage">
+              <!--header-->
+              <ul class="top_nav1">
+                <li class="note1">Dashboard</li>
+                <li class="note2"><a href="#"><span class="glyphicon glyphicon-bell">
+                  <span style="color:#ff0505; font-size: 21px; margin-left: -28px;"><sup><sup>1</sup></sup></span>
+                  </span></a>
+                </li>
+              </ul> 
+              <!--body--> 
+
+              <div class="container parent">
+                  <div class="container">
+                      <button class="btn btn-lg btn1" type="button"><span>8000</span><br><br><br> <span>Courses</span></button>
+                      <button class="btn btn-lg btn2" type="button"><span>200</span><br><br><br> <span>Halls</span></button>
+                      <button class="btn btn-lg btn3" type="button"><span>500</span><br><br><br> <span>Invigilators</span></button>
+                                  </div>
+                      
+                                  <div class="container">
+                                    <button class="btn btn-lg timing" type="button">Shuffle</button>
+                                    <button class="btn btn-lg upload" type="button">Upload</button>
+                                   <i>Last shuffled <span class="time">3 hours ago</span></i>
+                                   <br><br><br>
+                      <div id="conversion">
+                        <h4>FEDERAL UNIVERSITY OF TECHNOLOGY, OWERRI<br>
+                          2019/2020 HARMATTAN SEMESTER UNIVERSITY EXAMINATION TIME TABLE
+                        </h4>
+                        <br>
+                        <table class="table table-bordered" id="conv">
+                    <tr>
+                      <th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>
+                    </tr>
+                    <tr>
+                      <th></th><th>250</th><th>400</th><th>500</th><th>600</th><th>750</th><th>800</th><th>1000</th> <th>1000</th><th>1500</th><th>2000</th>
+                    </tr>
+                    <tr>
+                      <td>Mon<br>9-12am</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> <td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                      <td>2-5pm</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> <td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                      <td>Tue<br>9-12am</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> <td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                      <td>2-5pm</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> <td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                      <td>Wed<br>9-12am</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> <td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                      <td>2-5pm</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> <td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                      <td>Thur<br>9-12am</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> <td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                      <td>2-5pm</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> <td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                      <td>Fri<br>9-12am</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> <td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                      <td>2-5pm</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> <td></td><td></td><td></td>
+                    </tr>
+                        </table>
+                      </div>
+                                   
+                      <br><br>
+                    <button class="btn btn-lg convert" type="button">Download</button>
+                    </div>
+            
+                         <div id="elemh"></div>
+
+
+
+                    </div>
+
+               
+         
+
+
+                <script src= "jquery-3.4.1.min.js"></script>
+                <script src= "jqueryui/jquery-ui.js"></script>
+                <script src="jspdf.min.js"></script>
+                <script src="jspdf.debug.js"></script>
+                <script src="adminpanel.js"></script>
+                <script>
+             
+               
+(function(){
+
+  // download function
+ 
+   $('.convert').on('click',function(){
+
+                  var doc = new jsPDF({
+                    orientation: 'landscape'
+                  });
+                var elementHTML = $('#conversion').html()
+               
+                var specialElementHandlers = {
+                  '#elemh': function(element, renderer){
+                    return true;
+                  }
+                };
+                doc.fromHTML(elementHTML, 30, 0, {
+                  'width': 300,
+                  'elementHandlers': specialElementHandlers
+                });
+
+                doc.save('sample-document.pdf');
+              });
+
+         
+    
+
+
+                 //time shuffle function
+                  $('.timing').on('click',function(){
+                  d = new Date().toLocaleString();
+                  $('.time').html(d);
+                  });
+
+            
+                 
+
+})();
+                          
+               
+
+            
+
+
+               
+                </script>
+                  
+        </body>
+       
+</html>
